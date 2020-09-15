@@ -6,21 +6,21 @@
     
 
     
-    <title>Hello World | Charfus&#39; blog</title>
+    <title>블로그를 만들었다 | Charfus&#39; blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="keywords" content="" />
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="인터넷을 접한지 20년이 다 되어가고, 그 동안 스쳐지나간 개인 홈페이지, 미니홈피, 블로그가 수십 개다…그 중 하나만 진득하게 했더라면… (사실 크게 달라진 것 없었겠지만…)다 큰 성인이 되고나서도 한참 후에야 이렇게 또 블로그를 하나 만들었다.이번에는 또 얼마나 가려나.. 라는 생각은 하지 않고 그냥 이것저것 기록을 해보겠다.대신 좀 더 책임감 있는 포">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://charfus.github.io/2020/09/13/hello-world/index.html">
+<meta property="og:title" content="블로그를 만들었다">
+<meta property="og:url" content="https://charfus.github.io/2020/09/13/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4/index.html">
 <meta property="og:site_name" content="Charfus&#39; blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:locale" content="ko_KR">
-<meta property="article:published_time" content="2020-09-12T15:11:18.568Z">
-<meta property="article:modified_time" content="2020-09-12T15:11:18.568Z">
+<meta property="og:description" content="인터넷을 접한지 20년이 다 되어가고, 그 동안 스쳐지나간 개인 홈페이지, 미니홈피, 블로그가 수십 개다…그 중 하나만 진득하게 했더라면… (사실 크게 달라진 것 없었겠지만…)다 큰 성인이 되고나서도 한참 후에야 이렇게 또 블로그를 하나 만들었다.이번에는 또 얼마나 가려나.. 라는 생각은 하지 않고 그냥 이것저것 기록을 해보겠다.대신 좀 더 책임감 있는 포">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-09-13T01:59:00.000Z">
+<meta property="article:modified_time" content="2020-09-15T02:23:56.711Z">
 <meta property="article:author" content="Charfus">
 <meta name="twitter:card" content="summary">
     
@@ -77,6 +77,10 @@
                         <a href="/" class="logo"></a>
                     </h1>
                     
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">개발새발괴발개발</p>
+                        </h2>
+                    
                 </div>
                 <div id="header-inner" class="nav-container">
                     <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
@@ -84,13 +88,13 @@
                         <ul id="main-nav">
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/">홈</a>
+                                    <a class="main-nav-list-link" href="/">Home</a>
                                 </li>
                             
-                                    
+                                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Post/">Post</a></li></ul>
                                 
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/about/index.html">내 정보</a>
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
                                 </li>
                             
                         </ul>
@@ -98,14 +102,14 @@
                             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="검색" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="찾고자 하는 포스트를 검색하세요." />
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -117,10 +121,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: '포스트',
-            PAGES: '페이지',
-            CATEGORIES: '카테고리',
-            TAGS: '태그',
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -149,19 +153,19 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    미지정
+    <a class="page-title-link" href="/categories/Post/">Post</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-hello-world" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-블로그를-만들었다" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Hello World
+        블로그를 만들었다
         </h1>
     
 
@@ -172,16 +176,16 @@
                 
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/2020/09/13/hello-world/" class="article-date">
-       <time datetime="2020-09-12T15:11:18.568Z" itemprop="datePublished">2020-09-13</time>
+    <a href="/2020/09/13/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4/" class="article-date">
+       <time datetime="2020-09-13T01:59:00.000Z" itemprop="datePublished">2020-09-13</time>
     </a>
   </div>
 
 
 <div class="article-date">
   <i class="fa fa-calendar-plus-o"></i>
-  <a href="/2020/09/13/hello-world/" class="article-date">
-     <time datetime="2020-09-12T15:11:18.568Z" itemprop="dateModified">2020-09-13</time>
+  <a href="/2020/09/13/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4/" class="article-date">
+     <time datetime="2020-09-15T02:23:56.711Z" itemprop="dateModified">2020-09-15</time>
   </a>
 </div>
 
@@ -203,19 +207,7 @@
 
             
 
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+            <p>인터넷을 접한지 20년이 다 되어가고, 그 동안 스쳐지나간 개인 홈페이지, 미니홈피, 블로그가 수십 개다…<br>그 중 하나만 진득하게 했더라면… (사실 크게 달라진 것 없었겠지만…)<br>다 큰 성인이 되고나서도 한참 후에야 이렇게 또 블로그를 하나 만들었다.<br>이번에는 또 얼마나 가려나.. 라는 생각은 하지 않고 그냥 이것저것 기록을 해보겠다.<br>대신 좀 더 책임감 있는 포스팅이 되길 바라고 스스로 다짐…👴</p>
 
         </div>
         <footer class="article-footer">
@@ -223,7 +215,7 @@
 
 
 
-    <a data-url="https://charfus.github.io/2020/09/13/hello-world/" data-id="ckf0qnm8z00021cvb6yzr50ig" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://charfus.github.io/2020/09/13/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4/" data-id="ckf3bzy830000t8vb6aa4gbuy" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -293,30 +285,22 @@
             "@type": "Person",
             "name": "Charfus"
         },
-        "headline": "Hello World",
+        "headline": "블로그를 만들었다",
         "image": "https://charfus.github.io",
         "keywords": "",
-        "genre": "",
+        "genre": "Post",
         "datePublished": "2020-09-13",
         "dateCreated": "2020-09-13",
-        "dateModified": "2020-09-13",
-        "url": "https://charfus.github.io/2020/09/13/hello-world/",
-        "description": "Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick",
-        "wordCount": 128
+        "dateModified": "2020-09-15",
+        "url": "https://charfus.github.io/2020/09/13/블로그를-만들었다/",
+        "description": "인터넷을 접한지 20년이 다 되어가고, 그 동안 스쳐지나간 개인 홈페이지, 미니홈피, 블로그가 수십 개다…그 중 하나만 진득하게 했더라면… (사실 크게 달라진 것 없었겠지만…)다 큰 성인이 되고나서도 한참 후에야 이렇게 또 블로그를 하나 만들었다.이번에는 또 얼마나 가려나.. 라는 생각은 하지 않고 그냥 이것저것 기록을 해보겠다.대신 좀 더 책임감 있는 포",
+        "wordCount": 53
     }
 </script>
 
 </article>
 
     <section id="comments">
-    
-        
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-
-
     
     </section>
 
@@ -327,29 +311,13 @@ Quick",
                     <aside id="sidebar">
     <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
     <div class="sidebar-top">
-        <p>팔로우:</p>
+        <p>follow:</p>
         <ul class="social-links">
             
                 
                 <li>
-                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                    <a class="social-tooltip" title="twitter" href="https://twitter.com/charfus" target="_blank" rel="noopener">
                         <i class="icon fa fa-twitter"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-facebook"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="stack-overflow" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-stack-overflow"></i>
                     </a>
                 </li>
                 
@@ -374,21 +342,6 @@ Quick",
     </div>
     
         
-<nav id="article-nav">
-    
-        <a href="/2020/09/13/%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%93%9C%EB%94%94%EC%96%B4/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">신규</strong>
-        <p class="article-nav-title">
-        
-            만들었다 블로그 드디어
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
-    
-    
-</nav>
-
     
     <div class="widgets-container">
         
@@ -398,25 +351,16 @@ Quick",
             
                 
     <div class="widget-wrap">
-        <h3 class="widget-title">최근 글</h3>
+        <h3 class="widget-title">recents</h3>
         <div class="widget">
             <ul id="recent-post" class="no-thumbnail">
                 
                     <li>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2020/09/13/%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%93%9C%EB%94%94%EC%96%B4/" class="title">만들었다 블로그 드디어</a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/Post/">Post</a></p>
+                            <p class="item-title"><a href="/2020/09/13/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4/" class="title">블로그를 만들었다</a></p>
                             <p class="item-date"><time datetime="2020-09-13T01:59:00.000Z" itemprop="datePublished">2020-09-13</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2020/09/13/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2020-09-12T15:11:18.568Z" itemprop="datePublished">2020-09-13</time></p>
                         </div>
                     </li>
                 
@@ -426,13 +370,20 @@ Quick",
 
             
                 
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Post/">Post</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
 
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">아카이브</h3>
+        <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">9월 2020</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -446,7 +397,7 @@ Quick",
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">링크</h3>
+        <h3 class="widget-title">links</h3>
         <div class="widget">
             <ul>
                 
@@ -468,12 +419,10 @@ Quick",
         <div class="container-inner">
             <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
             <div class="credit">
-                <h1 class="logo-wrap">
+                <h1 class="logo-wrap">                    
                     <a href="/" class="logo"></a>
                 </h1>
                 <p>&copy; 2020 Charfus</p>
-                
-                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
                 
             </div>
             <div class="footer-plugins">
@@ -488,24 +437,6 @@ Quick",
 
     </div>
     
-    
-    <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    var disqus_url = 'https://charfus.github.io/2020/09/13/hello-world/';
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
-
-
-
 
 
     

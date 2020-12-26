@@ -6,24 +6,25 @@
     
 
     
-    <title>Global Object Id | Haneul&#39;s dev blog</title>
+    <title>Global Object Id | HaneulDev</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="mongoDB,project" />
+    <meta name="keywords" content="mongoDB,project,galpi" />
     
-    <meta name="description" content="20년 10월 19일 22시 43분 현재 내가 처한 상황:사람들이 올릴 각 포스트를 볼 수 있는 url이 필요하다. 무엇을 포스트의 고유한 식별자로 할 것인고.  mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프로필의 경우엔 그냥 username으로 했는데… 인스타에 들어가서 포스트를 클릭해보니 보니 그리 길지 않은 고유 아이디를 ur">
+    <meta name="description" content="20년 10월 19일 22시 43분 현재 내가 처한 상황:사람들이 올릴 각 포스트를 볼 수 있는 url이 필요하다. 무엇을 포스트의 고유한 식별자로 하지.  mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프로필의 경우엔 그냥 username으로 했는데… 인스타에 들어가서 포스트를 클릭해보니 보니 그리 길지 않은 고유 아이디를 url로">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Global Object Id">
 <meta property="og:url" content="https://haneulcha.github.io/2020/10/19/Global-Object-Id/index.html">
-<meta property="og:site_name" content="Haneul&#39;s dev blog">
-<meta property="og:description" content="20년 10월 19일 22시 43분 현재 내가 처한 상황:사람들이 올릴 각 포스트를 볼 수 있는 url이 필요하다. 무엇을 포스트의 고유한 식별자로 할 것인고.  mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프로필의 경우엔 그냥 username으로 했는데… 인스타에 들어가서 포스트를 클릭해보니 보니 그리 길지 않은 고유 아이디를 ur">
+<meta property="og:site_name" content="HaneulDev">
+<meta property="og:description" content="20년 10월 19일 22시 43분 현재 내가 처한 상황:사람들이 올릴 각 포스트를 볼 수 있는 url이 필요하다. 무엇을 포스트의 고유한 식별자로 하지.  mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프로필의 경우엔 그냥 username으로 했는데… 인스타에 들어가서 포스트를 클릭해보니 보니 그리 길지 않은 고유 아이디를 url로">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-10-19T13:43:20.000Z">
-<meta property="article:modified_time" content="2020-12-10T05:41:09.212Z">
+<meta property="article:modified_time" content="2020-12-26T10:38:00.000Z">
 <meta property="article:author" content="Haneul Cha">
 <meta property="article:tag" content="mongoDB">
 <meta property="article:tag" content="project">
+<meta property="article:tag" content="galpi">
 <meta name="twitter:card" content="summary">
     
 
@@ -64,7 +65,7 @@
     
 
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+<meta name="generator" content="Hexo 5.3.0"></head>
 
 <body>
     <div id="wrap">
@@ -185,7 +186,7 @@
 <div class="article-date">
   <i class="fa fa-calendar-plus-o"></i>
   <a href="/2020/10/19/Global-Object-Id/" class="article-date">
-     <time datetime="2020-12-10T05:41:09.212Z" itemprop="dateModified">2020-12-10</time>
+     <time datetime="2020-12-26T10:38:00.000Z" itemprop="dateModified">2020-12-26</time>
   </a>
 </div>
 
@@ -195,7 +196,7 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/mongoDB/" rel="tag">mongoDB</a>, <a class="tag-link-link" href="/tags/project/" rel="tag">project</a>
+        <a class="tag-link-link" href="/tags/galpi/" rel="tag">galpi</a>, <a class="tag-link-link" href="/tags/mongoDB/" rel="tag">mongoDB</a>, <a class="tag-link-link" href="/tags/project/" rel="tag">project</a>
     </div>
 
                 
@@ -212,10 +213,22 @@
 
             
 
-            <p>20년 10월 19일 22시 43분 현재 내가 처한 상황:<br>사람들이 올릴 각 포스트를 볼 수 있는 url이 필요하다. 무엇을 포스트의 고유한 식별자로 할 것인고. </p>
+            <p>20년 10월 19일 22시 43분 현재 내가 처한 상황:<br>사람들이 올릴 각 포스트를 볼 수 있는 url이 필요하다. 무엇을 포스트의 고유한 식별자로 하지. </p>
 <p>mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프로필의 경우엔 그냥 username으로 했는데… 인스타에 들어가서 포스트를 클릭해보니 보니 그리 길지 않은 고유 아이디를 url로 쓰고 있다. </p>
 <p>어찌저찌 검색을 해보니 키워드는 ‘global object id’ 정도인 것 같고, ‘auto increment’에 대한 포스팅과 스택오버플로우의 질문들도 발견했다. ‘인덱스’와 ‘샤딩’은 아직 어디에 어떻게 쓰이는지 잘 모르겠다.<br>그리고 <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/shortid">‘shortid’</a>라는 npm 패키지도 발견했다. </p>
 <p>해결하자…</p>
+<hr>
+<p>12월 26일 배포까지 끝난 시점:<br>이 고민은 사실 별 건 아니였다. nanoid, shortid, uuid 등 그냥 목적에 맞는 uuid 패키지를 검색해서 schema에서 uuid 생성 함수를 적용하니 해결되었다.   </p>
+<ul>
+<li><p>mongoDB에서 원래 자동 생성되는 _id를 대신해서 uuid를 쓰는 것도 가능한데 나는 uuid 프로퍼티를 따로 추가했다. 처음에 왜 _id를 노출시키는 게 찜찜했는지는 나도 잘 모르겠다.   </p>
+</li>
+<li><p>이후에 정렬을 해야할 일이 생길지도 모르겠다는 생각이 들어서 uuid와 별개로 index를 추가해서, 유저가 포스팅 할 때마다 increment 되도록 mongoDB 쿼리를 뒤져서 함수를 작성했다.</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const index &#x3D; await Sequence.findOneAndUpdate(</span><br><span class="line">    &#123; user &#125;,</span><br><span class="line">    &#123; $inc: &#123; uid: 1 &#125; &#125;,</span><br><span class="line">    &#123; new: true &#125;</span><br><span class="line">    );</span><br></pre></td></tr></table></figure></li>
+<li><p>개발 중간에 알아차린 실수는 uuid 생성 함수를 딸랑 쓰면 안 되고, 콜백으로 처리해야 한다는 점이였다. 처음에 딸랑 nanoid() 이렇게만 썼다가 모든 포스트의 uuid가 동일해졌고, 정반대의 목적으로 uuid를 활용한 꼴이 되었다.</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const postSchema &#x3D; new Schema(</span><br><span class="line">&#123; ...</span><br><span class="line">    uuid: &#123;</span><br><span class="line">        type: String,</span><br><span class="line">        default: () &#x3D;&gt; nanoid(),</span><br><span class="line">        &#125;,</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>결과적으로 모든 포스트가 <code>/p/:uuid</code> 주소로 각각 url을 갖게 되었다. </p>
+</li>
+</ul>
 
         </div>
         <footer class="article-footer">
@@ -295,15 +308,15 @@
         },
         "headline": "Global Object Id",
         "image": "https://haneulcha.github.io",
-        "keywords": "mongoDB project",
+        "keywords": "mongoDB project galpi",
         "genre": "Post",
         "datePublished": "2020-10-19",
         "dateCreated": "2020-10-19",
-        "dateModified": "2020-12-10",
+        "dateModified": "2020-12-26",
         "url": "https://haneulcha.github.io/2020/10/19/Global-Object-Id/",
-        "description": "20년 10월 19일 22시 43분 현재 내가 처한 상황:사람들이 올릴 각 포스트를 볼 수 있는 url이 필요하다. 무엇을 포스트의 고유한 식별자로 할 것인고. 
-mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프로필의 경우엔 그냥 username으로 했는데… 인스타에 들어가서 포스트를 클릭해보니 보니 그리 길지 않은 고유 아이디를 ur",
-        "wordCount": 80
+        "description": "20년 10월 19일 22시 43분 현재 내가 처한 상황:사람들이 올릴 각 포스트를 볼 수 있는 url이 필요하다. 무엇을 포스트의 고유한 식별자로 하지. 
+mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프로필의 경우엔 그냥 username으로 했는데… 인스타에 들어가서 포스트를 클릭해보니 보니 그리 길지 않은 고유 아이디를 url로 ",
+        "wordCount": 304
     }
 </script>
 
@@ -345,6 +358,16 @@ mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프�
         
 <nav id="article-nav">
     
+        <a href="/2020/12/26/CSP-Content-Security-Policy/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            CSP(Content Security Policy)
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
     
         <a href="/2020/09/13/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
@@ -366,6 +389,15 @@ mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프�
         <h3 class="widget-title">recents</h3>
         <div class="widget">
             <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Post/">Post</a></p>
+                            <p class="item-title"><a href="/2020/12/26/CSP-Content-Security-Policy/" class="title">CSP(Content Security Policy)</a></p>
+                            <p class="item-date"><time datetime="2020-12-26T11:00:19.000Z" itemprop="datePublished">2020-12-26</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -394,7 +426,7 @@ mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프�
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Post/">Post</a><span class="category-list-count">2</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Post/">Post</a><span class="category-list-count">3</span></li></ul>
         </div>
     </div>
 
@@ -404,7 +436,7 @@ mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프�
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -414,7 +446,7 @@ mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프�
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongoDB/" rel="tag">mongoDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project/" rel="tag">project</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/deploy/" rel="tag">deploy</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/galpi/" rel="tag">galpi</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongoDB/" rel="tag">mongoDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project/" rel="tag">project</a><span class="tag-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -424,7 +456,7 @@ mongoDB의 _id를 그대로 노출 시키기는 뭔가 찜찜하다. 유저 프�
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/mongoDB/" style="font-size: 10px;">mongoDB</a> <a href="/tags/project/" style="font-size: 10px;">project</a>
+            <a href="/tags/deploy/" style="font-size: 10px;">deploy</a> <a href="/tags/galpi/" style="font-size: 20px;">galpi</a> <a href="/tags/mongoDB/" style="font-size: 10px;">mongoDB</a> <a href="/tags/project/" style="font-size: 20px;">project</a>
         </div>
     </div>
 

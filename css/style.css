@@ -382,17 +382,18 @@ code {
   margin-left: 20px;
 }
 #header-title .subtitle {
-  font-size: 33px;
+  font-size: 42px;
   font-style: italic;
   line-height: 121px;
-  color: #040f0f;
-  font-weight: 600;
-  text-shadow: 0 2px rgba(0,0,0,0.2);
+  color: #bd8bda;
+  font-weight: bolder;
+  text-shadow: 7px 24px rgba(0,0,0,0.6);
+  -webkit-text-stroke: 1px #572574;
 }
 .nav-container .nav-icon,
 .nav-container .nav-container-inner #main-nav .main-nav-list-item .main-nav-list-link {
   float: left;
-  color: #040f0f;
+  color: #f6fdfe;
   text-decoration: none;
   text-shadow: 0 1px rgba(0,0,0,0.2);
   display: block;
@@ -405,7 +406,7 @@ code {
 .nav-container .nav-icon:hover,
 .nav-container .nav-container-inner #main-nav .main-nav-list-item .main-nav-list-link:hover {
   color: #fff;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.9);
 }
 .nav-container {
   padding: 0 15px;
@@ -521,7 +522,7 @@ code {
 .search-form:before {
   content: "\f002";
   margin-right: 8px;
-  color: #040f0f;
+  color: #f6fdfe;
   font: normal normal normal 16px/1 FontAwesome;
 }
 .search-form-input,
@@ -541,7 +542,7 @@ code {
   -ms-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
   font: 16px "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
-  color: #040f0f;
+  color: #f6fdfe;
 }
 .search-form-input:focus,
 .search-form-input.ins-search-input:focus,
@@ -2080,11 +2081,11 @@ i.icon:before {
   }
   #header .nav-container #main-nav .main-nav-list-item.top-level-menu:hover > a {
     background: none;
-    color: #040f0f;
+    color: #f6fdfe;
   }
   #header .nav-container #main-nav .main-nav-list-item.top-level-menu > a:hover {
     color: #fff;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.9);
   }
   #header .nav-container #main-nav .main-nav-list-item .main-nav-list-child {
     display: block !important;

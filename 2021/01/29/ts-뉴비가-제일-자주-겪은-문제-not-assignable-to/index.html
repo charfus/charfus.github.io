@@ -6,25 +6,25 @@
     
 
     
-    <title>CSP(Content Security Policy) | Cha</title>
+    <title>TS :: null 혹은 undefined 피하기 | Cha</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="project,galpi,deploy" />
+    <meta name="keywords" content="typescript,javascript,operator" />
     
-    <meta name="description" content="결론서버에서 helmet 메소드로 설정할 수 있었다. 다시 문제 1Access to XMLHttpRequest at &#39;https:&#x2F;&#x2F;galpi.herokuapp.com&#x2F;api&#x2F;auth&#39; from origin &#39;http:&#x2F;&#x2F;galpi.herokuapp.com&#39; has been">
+    <meta name="description" content="얼떨결에 무작정 타입스크립트로 간단한 작업을 몇 번 하게 되었는데 아직 익힌지 얼마 안 되어서 코드 작성하는 내내 그냥 얼레벌레인 상태다. 공식 Doc에 나오는 Basic Usage에서 쌓아가는, 그런 갈길이 먼 상태… 아무튼 그런 상태에서도 계속해서 부딪히는 문제가 있어서 우선 기록은 남겨놓으려고 한다. 아직 정확한 용어를 숙지하지 못해서 그냥 풀어서 쓰">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSP(Content Security Policy)">
-<meta property="og:url" content="https://haneulcha.github.io/2020/12/26/CSP-Content-Security-Policy/index.html">
+<meta property="og:title" content="TS :: null 혹은 undefined 피하기">
+<meta property="og:url" content="https://haneulcha.github.io/2021/01/29/ts-%EB%89%B4%EB%B9%84%EA%B0%80-%EC%A0%9C%EC%9D%BC-%EC%9E%90%EC%A3%BC-%EA%B2%AA%EC%9D%80-%EB%AC%B8%EC%A0%9C-not-assignable-to/index.html">
 <meta property="og:site_name" content="Cha">
-<meta property="og:description" content="결론서버에서 helmet 메소드로 설정할 수 있었다. 다시 문제 1Access to XMLHttpRequest at &#39;https:&#x2F;&#x2F;galpi.herokuapp.com&#x2F;api&#x2F;auth&#39; from origin &#39;http:&#x2F;&#x2F;galpi.herokuapp.com&#39; has been">
+<meta property="og:description" content="얼떨결에 무작정 타입스크립트로 간단한 작업을 몇 번 하게 되었는데 아직 익힌지 얼마 안 되어서 코드 작성하는 내내 그냥 얼레벌레인 상태다. 공식 Doc에 나오는 Basic Usage에서 쌓아가는, 그런 갈길이 먼 상태… 아무튼 그런 상태에서도 계속해서 부딪히는 문제가 있어서 우선 기록은 남겨놓으려고 한다. 아직 정확한 용어를 숙지하지 못해서 그냥 풀어서 쓰">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-26T11:00:19.000Z">
-<meta property="article:modified_time" content="2021-01-29T10:38:00.000Z">
+<meta property="article:published_time" content="2021-01-29T04:44:48.000Z">
+<meta property="article:modified_time" content="2021-01-29T06:24:54.058Z">
 <meta property="article:author" content="Haneul Cha">
-<meta property="article:tag" content="project">
-<meta property="article:tag" content="galpi">
-<meta property="article:tag" content="deploy">
+<meta property="article:tag" content="typescript">
+<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="operator">
 <meta name="twitter:card" content="summary">
     
 
@@ -159,14 +159,14 @@
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-CSP-Content-Security-Policy" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-ts-뉴비가-제일-자주-겪은-문제-not-assignable-to" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        CSP(Content Security Policy)
+        TS :: null 혹은 undefined 피하기
         </h1>
     
 
@@ -177,16 +177,16 @@
                 
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/2020/12/26/CSP-Content-Security-Policy/" class="article-date">
-       <time datetime="2020-12-26T11:00:19.000Z" itemprop="datePublished">2020-12-26</time>
+    <a href="/2021/01/29/ts-%EB%89%B4%EB%B9%84%EA%B0%80-%EC%A0%9C%EC%9D%BC-%EC%9E%90%EC%A3%BC-%EA%B2%AA%EC%9D%80-%EB%AC%B8%EC%A0%9C-not-assignable-to/" class="article-date">
+       <time datetime="2021-01-29T04:44:48.000Z" itemprop="datePublished">2021-01-29</time>
     </a>
   </div>
 
 
 <div class="article-date">
   <i class="fa fa-calendar-plus-o"></i>
-  <a href="/2020/12/26/CSP-Content-Security-Policy/" class="article-date">
-     <time datetime="2021-01-29T10:38:00.000Z" itemprop="dateModified">2021-01-29</time>
+  <a href="/2021/01/29/ts-%EB%89%B4%EB%B9%84%EA%B0%80-%EC%A0%9C%EC%9D%BC-%EC%9E%90%EC%A3%BC-%EA%B2%AA%EC%9D%80-%EB%AC%B8%EC%A0%9C-not-assignable-to/" class="article-date">
+     <time datetime="2021-01-29T06:24:54.058Z" itemprop="dateModified">2021-01-29</time>
   </a>
 </div>
 
@@ -196,7 +196,7 @@
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/deploy/" rel="tag">deploy</a>, <a class="tag-link-link" href="/tags/galpi/" rel="tag">galpi</a>, <a class="tag-link-link" href="/tags/project/" rel="tag">project</a>
+        <a class="tag-link-link" href="/tags/javascript/" rel="tag">javascript</a>, <a class="tag-link-link" href="/tags/operator/" rel="tag">operator</a>, <a class="tag-link-link" href="/tags/typescript/" rel="tag">typescript</a>
     </div>
 
                 
@@ -213,10 +213,23 @@
 
             
 
-            <p>결론<br>서버에서 helmet 메소드로 설정할 수 있었다.</p>
-<p>다시 문제</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Access to XMLHttpRequest at &#39;https:&#x2F;&#x2F;galpi.herokuapp.com&#x2F;api&#x2F;auth&#39; from origin &#39;http:&#x2F;&#x2F;galpi.herokuapp.com&#39; has been blocked by CORS policy: The &#39;Access-Control-Allow-Origin&#39; header has a value &#39;https:&#x2F;&#x2F;galpi.herokuapp.com&#39; that is not equal to the supplied origin</span><br></pre></td></tr></table></figure>
-<p>내 크롬에서는 https로 아무 문제 없이 접속되는데 엣지에서는 또 저런 오류가 발생한다. 와일드 카드는 안 쓰려고 버티고 있는데 대체 왜?</p>
+            <p>얼떨결에 무작정 타입스크립트로 간단한 작업을 몇 번 하게 되었는데 아직 익힌지 얼마 안 되어서 코드 작성하는 내내 그냥 얼레벌레인 상태다. 공식 Doc에 나오는 Basic Usage에서 쌓아가는, 그런 갈길이 먼 상태… 아무튼 그런 상태에서도 계속해서 부딪히는 문제가 있어서 우선 기록은 남겨놓으려고 한다.</p>
+<p>아직 정확한 용어를 숙지하지 못해서 그냥 풀어서 쓰면, undefined 나 null를 포함하여 복수의 타입이 허용되는 변수를 사용할 때 내가 특정한 타입, 예를 들어 string이나 number 같은 타입을 할당하려는 데에도 불구하고 undefinde이나 null도 ‘가능’하기 때문에 “Type … is not assignable to …”와 같은 오류와 빨간 줄이 뜨는 상태에 자주 처했다.</p>
+<p>아마 이 문제 때문에 구글링을 하면 가장 먼저 뜨는 스택오버플로우 질문이 아닐까 싶은데 </p>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/54496398/typescript-type-string-undefined-is-not-assignable-to-type-string">Stackoverflow :: Typescript: Type ‘string | undefined’ is not assignable to type ‘string’</a></p>
+<p>이걸 읽고 급하게 대처하긴 했는데 제대로 읽진 않아서 다시 확인해보았다.</p>
+<h3 id="Non-null-assertion-operator-Non-null-단언-연산자"><a href="#Non-null-assertion-operator-Non-null-단언-연산자" class="headerlink" title="Non-null assertion operator - Non-null 단언 연산자 ( ! )"></a>Non-null assertion operator - Non-null 단언 연산자 ( ! )</h3><p>가장 유용하다고 선택된 답변은 non-null assertion operator를 써서 null이나 undefined가 아니라는 걸 타입스크립트에게 알려주면 된다는 것이었다. 역시나 급하게 대처해야하는 상황에 적절한 방법이였다! </p>
+<p><a target="_blank" rel="noopener" href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator">공식 문서 TS 2.0 - Non-null assertion operator</a></p>
+<p>“x!는 null과 undefined를 제외한 타입 x의 값을 뱉어내고, <T>x 와 x as T 같은 타입 단언과 마찬가지로 자바스크립트 코드에서는 제거된다”고 한다. 그래서 위 스택오버플로우 질문에 이런 답변도 있던 것 같다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name1:string = person.name <span class="keyword">as</span> string;</span><br></pre></td></tr></table></figure>
+<p>어쩐지 어떤 개발자들은 분명 싫어할 주먹구구식 방법 같다는 인상을 강하게 받아 계속해서 살펴보니 이런저런 반대 의견들이 있었다. 실제 런타임에서 값으로 null이나 undefined를 갖고 있으면 어쨌든 오류가 발생하리라는 점이 지적되는 것 같다. 차라리 </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">doTheThing</span>(<span class="params">foo?: Foo</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> s = foo!.bar;  <span class="comment">// Noncompliant</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">doTheThing</span>(<span class="params">foo?: Foo</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (foo) &#123;</span><br><span class="line">    <span class="keyword">let</span> s = foo.bar;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>이렇게 직접 검사를 하라는 조언도 있었다. <a target="_blank" rel="noopener" href="https://rules.sonarsource.com/typescript/RSPEC-2966">출처 - sonarsource</a> 위의 스택오버플로우의 답변에 대한 댓글에도 이와 비슷한 조언이 있었다. </p>
+<h3 id="Nullish-coalescing-operator-Null-병합-연산자"><a href="#Nullish-coalescing-operator-Null-병합-연산자" class="headerlink" title="Nullish coalescing operator - Null 병합 연산자 ( ?? )"></a>Nullish coalescing operator - Null 병합 연산자 ( ?? )</h3><p>또 다른 답변으로는 ||와 비슷한 Null 병합 연산자를 쓰라는 조언이 있었다. </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name1:string = person.name ?? <span class="string">&#x27;&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p>person.name이 null 혹은 undefined 일 때, 오른쪽 ‘’을 반환하고 그렇지 않으면 왼쪽 피연산자를 반환한다는 뜻이라고 한다. MDN을 참고하면 <code>||</code>와 다르게 falsy 값 (0, ‘’, NaN 등) 이어도 null과 undefined만 아니면 왼쪽 피연산자를 반환한다. (<code>||</code>)은 falsy 값이면 무조건 오른쪽 디폴트 값을 반환한다. 이 연산자는 TS 3.7부터 도입되었다고 한다.</p>
+<p>자바스크립트에 이런 연산자들이 있다고 어렴풋이 들긴 했는데 타입스크립트와 결합되어서 제 역할을 한다는 인상을 받았다. 사실 직접 코드를 작성할 당시 느꼈던 점은 이러한 연산자들을 써야할 때 애초에 내가 타입을 정의하고 설계한 시점부터 에러의 씨앗을 심어졌다는 것이였는데 (…) 정말 어쩔 수 없는 경우에만 저런 연산자들을 쓸 수 있도록 코드 좀 잘 짜보고 싶다.</p>
 
         </div>
         <footer class="article-footer">
@@ -224,7 +237,7 @@
 
 
 
-    <a data-url="https://haneulcha.github.io/2020/12/26/CSP-Content-Security-Policy/" data-id="ckke4yz390002qovb4tmmdic9" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://haneulcha.github.io/2021/01/29/ts-%EB%89%B4%EB%B9%84%EA%B0%80-%EC%A0%9C%EC%9D%BC-%EC%9E%90%EC%A3%BC-%EA%B2%AA%EC%9D%80-%EB%AC%B8%EC%A0%9C-not-assignable-to/" data-id="ckkhw9jw600009ovbfqzkcei7" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -294,18 +307,17 @@
             "@type": "Person",
             "name": "Haneul Cha"
         },
-        "headline": "CSP(Content Security Policy)",
+        "headline": "TS :: null 혹은 undefined 피하기",
         "image": "https://haneulcha.github.io",
-        "keywords": "project galpi deploy",
+        "keywords": "typescript javascript operator",
         "genre": "Post",
-        "datePublished": "2020-12-26",
-        "dateCreated": "2020-12-26",
+        "datePublished": "2021-01-29",
+        "dateCreated": "2021-01-29",
         "dateModified": "2021-01-29",
-        "url": "https://haneulcha.github.io/2020/12/26/CSP-Content-Security-Policy/",
-        "description": "결론서버에서 helmet 메소드로 설정할 수 있었다.
-다시 문제
-1Access to XMLHttpRequest at &#39;https:&#x2F;&#x2F;galpi.herokuapp.com&#x2F;api&#x2F;auth&#39; from origin &#39;http:&#x2F;&#x2F;galpi.herokuapp.com&#39; has been ",
-        "wordCount": 60
+        "url": "https://haneulcha.github.io/2021/01/29/ts-뉴비가-제일-자주-겪은-문제-not-assignable-to/",
+        "description": "얼떨결에 무작정 타입스크립트로 간단한 작업을 몇 번 하게 되었는데 아직 익힌지 얼마 안 되어서 코드 작성하는 내내 그냥 얼레벌레인 상태다. 공식 Doc에 나오는 Basic Usage에서 쌓아가는, 그런 갈길이 먼 상태… 아무튼 그런 상태에서도 계속해서 부딪히는 문제가 있어서 우선 기록은 남겨놓으려고 한다.
+아직 정확한 용어를 숙지하지 못해서 그냥 풀어서 쓰",
+        "wordCount": 474
     }
 </script>
 
@@ -355,20 +367,10 @@
         
 <nav id="article-nav">
     
-        <a href="/2020/12/31/%EA%B0%84%EC%8B%A0%ED%9E%88-%EB%B0%B0%ED%8F%AC%ED%96%88%EB%8D%94%EB%8B%88-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%9C%A0%EC%A7%80%EA%B0%80-%EB%90%98%EC%A7%80-%EC%95%8A%EC%9D%84-%EB%95%8C/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            로그인 유지가 되지 않을 때
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2020/10/19/Global-Object-Id/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2021/01/26/Git-%EA%B6%81%EA%B8%88%ED%96%88%EB%8D%98-%EA%B2%83%EB%93%A4/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Global Object Id</p>
+        <p class="article-nav-title">Git :: 궁금했던 것들</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
